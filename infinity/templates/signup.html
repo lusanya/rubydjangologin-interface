@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign pr</title>
+</head>
+<body>
+<h1>Sign up Here</h1>
+<form method="post" class="signup">
+    {% csrf_token %}
+            <div class="input_details">
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" placeholder="Input your username" required>
+
+        </div>
+        <div class="input_details">
+            <label for="Password">password</label>
+            <input type="password" id="Password" name="Password" placeholder="input your password" required>
+        </div>
+        <div class="input_details">
+            <label for="Password">password</label>
+            <input type="password" id="repeat_Password" name="Password" placeholder="Confirm your password" required>
+        </div>
+        <div>
+           <button type="submit" class="login_btn">Register</button>
+        </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>log in page</title>
+</head>
+<body>
+<h1>
+    Hello our valuable client this is our log in page
+</h1>
+<div class="login_container">
+    <form method="POST" class="login_form">
+        {% csrf_token %}
+        <h2>LOG IN</h2>
+        <div class="input_details">
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" placeholder="Input your username"required>
+
+        </div>
+        <div class="input_details">
+            <label for="Password">password</label>
+            <input type="password" id="Password" name="Password" placeholder="input your password" required>
+        </div>
+        <div>
+           <button type="submit" class="login_btn">Log in</button>
+        </div>
+        <div class="forgot_password'">
+            <p><a href="#">Forgot password</a></p>
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>
